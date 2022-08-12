@@ -1,0 +1,37 @@
+/* MainPage_PG */
+.main6_wrap{
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #f7f9fc;
+}
+.main-contents6{
+    padding: 100px 100px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.m6_title{
+    font-weight: bold;
+    font-size: 16px;
+    color: #bac4d2;
+    letter-spacing: -2px;
+}
+.m6_icon img{
+    width: 100px;
+    padding: 30px;
+}
+@media (max-width: 768px) {
+    .m6_title{
+        margin-bottom: 50px;
+    }
+    .main-contents6{
+        padding: 20px 20px;
+    }
+    .m6_icon img {
+        width: 70px;
+        padding: 10px;
+    }
+}

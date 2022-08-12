@@ -1,0 +1,130 @@
+/*  MainPage_Api */
+.main4_wrap{
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.main-contents4{
+    padding: 200px 100px;
+    box-sizing: border-box;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.main-contents4 .icon_pc img{
+    width: 80px;
+    height: 80px;
+}
+.m4_contents{
+    margin-top: 20px;
+}
+.m4_text p:nth-child(1){
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #555;
+}.m4_text p:nth-child(2){
+     font-weight: 700;
+     font-size: 1.3rem;
+     color: #4529e5;
+ }
+
+.m4_contents button{
+    background: #4529e5;
+    border: none;
+    padding: 16px 30px;
+    color: #fff;
+    font-size: 17px;
+    box-sizing: border-box;
+    letter-spacing: -2px;
+    margin-top: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.m4_tabmenu{
+    display: flex;
+    margin-top: 70px;
+}
+.tab_text{
+    max-width: 800px;
+    height: 524px;
+    border: 1px solid #dae6f7;
+    border-radius: 5px;
+    overflow: auto;
+    white-space: pre-wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fafcff;
+    color: #2c1f7c;
+}
+.tab_select li{
+    width: 190px;
+    line-height: 30px;
+    color: #6e7c91;
+    margin-bottom: 4px;
+    margin-left: 50px;
+    border-radius: 5px;
+    padding: 4px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.tab_select li:hover{
+    color: #000;
+    transition: all 1s;
+}
+.icon_pc{
+    display: block;
+}
+.icon_mobile{
+    display: none;
+}
+@media (max-width: 768px) {
+    .main-contents4{
+        flex-direction: column;
+        padding: 50px 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .m4_text p:nth-child(1){
+        font-size: 1.2rem;
+    }
+    .m4_text p:nth-child(2){
+        font-size: 1rem;
+        letter-spacing: -2px;
+    }
+    .m4_contents button{
+    font-size: 12px;
+    padding: 16px 20px;
+    }
+    .tab_text{
+        width: 340px;
+        font-size: .3rem;
+    }
+    .icon_pc{
+        display: none;
+    }
+    .icon_mobile{
+        display: block;
+    }
+    .main-contents4 .icon_mobile > img{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 30px;
+    }
+    .m4_tabmenu{
+        flex-direction: column;
+    }
+    .tab_select{
+        display: flex;
+        align-items: center;
+        margin-left: -30px;
+    }
+    .tab_select li{
+        width: 100px;
+        padding: 4px 30px;
+        margin-left: 0px;
+        flex-direction: column;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}

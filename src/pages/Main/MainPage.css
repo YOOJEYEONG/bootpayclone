@@ -1,0 +1,119 @@
+.main_top{
+    width: 100%;
+    background-color: #4135bb;
+    background-image: url("../../assets/1_back.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.main_contents{
+    max-width: 1350px;
+    height: 740px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+.main_contents > .main_text{
+    width: 40%;
+    color: #fff;
+    margin-top: 30px;
+}
+.main_contents > .main_text span{
+    font-size: 2.8rem;
+}
+.main_contents > .main_text h2{
+    font-size: 3rem;
+    letter-spacing: -5px;
+}
+.main_contents > .main_text p{
+    font-weight: 400;
+    padding-top: 30px;
+    line-height: 0%;
+    letter-spacing: -2px;
+    animation-name: fadeInLeft;
+    animation-duration: 2.5s;
+}
+.main_contents > .main_text button{
+    background: #4529e5;
+    border: none;
+    padding: 16px 30px;
+    box-sizing: border-box;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin-top: 70px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    border-radius: 5px;
+    animation-name: fadeInLeft;
+    animation-duration: 3s;
+}
+/* main_img */
+.main_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*width: 40%;*/
+    /*position: relative;*/
+}
+.phone{
+    width: 300px;
+    z-index: 300;
+    margin-left: 15px;
+    animation-name: fadeInBottom;
+    animation-duration: 3s;
+}
+.laptop{
+    position: absolute;
+    max-width: 65%;
+    height: 600px;
+    z-index: 299;
+    left: 50%;
+    top: 35%;
+    animation-name: fadeInBottom2;
+    animation-duration: 3s;
+}
+.main_contents > .main_text .mobile{
+    display: none;
+}
+@media (max-width: 768px) {
+    .main_contents{
+        overflow: visible;
+    }
+    .main_contents > .main_text{
+        margin-top: 150px;
+        width: 400px;
+        text-align: center;
+    }
+    .main_contents > .main_text .pc{
+        display: none;
+    }
+    .main_contents > .main_text .mobile{
+        display: block;
+    }
+    .main_contents{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main_img{
+        width: 400px;
+        margin-left: -100px;
+        margin-top: 10px;
+    }
+    .phone{
+        width: 250px;
+    }
+    .laptop{
+        top: 60%;
+        left: 30%;
+        width: 600px;
+        animation-name: fadeInBottom3;
+    }
+    .main_contents > .main_text button{
+        margin-top: 40px;
+    }
+}

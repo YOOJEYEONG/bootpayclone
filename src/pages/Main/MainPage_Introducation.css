@@ -1,0 +1,92 @@
+/* MainPage_Introduction */
+.main2_wrap{
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #f7f9fc;
+}
+.main_contents2{
+    max-width: 1400px;
+    height: 460px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.main2_left{
+    margin-top: 80px;
+}
+.main2_text > li{
+    display: flex;
+}
+
+.main2_right{
+    width: 700px;
+    animation-name: fadeInright;
+    animation-duration: 3s;
+}
+.main2_left span{
+    letter-spacing: -3px;
+    margin-bottom: 6px;
+}
+
+.main2_title{
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.text_bold{
+    font-weight: 700;
+}
+.main2_icon{
+    display: flex;
+}
+.main2_text .icon{
+    width: 20px;
+    height: 20px;
+    background: #56ebe6;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+}
+.main2_text .icon i::before{
+    content: url("../../assets/check.png");
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main2_left .main2_text{
+    padding-top: 20px;
+    animation-name: fadeInLeft;
+    animation-duration: 2.8s;
+}
+.main2_left button{
+    background: #4529e5;
+    border: none;
+    padding: 16px 30px;
+    color: #fff;
+    font-size: 17px;
+    box-sizing: border-box;
+    letter-spacing: -2px;
+    margin-top: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    animation-name: fadeInLeft;
+    animation-duration: 3s;
+}
+@media (max-width: 768px) {
+    .main_contents2{
+        align-items: center;
+        justify-content: center;
+    }
+    .main2_left{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main2_right{
+        display: none;
+    }
+}

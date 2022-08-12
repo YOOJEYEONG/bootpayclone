@@ -1,0 +1,97 @@
+/* MainPage_Price */
+.main8_wrap{
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #f7f9fc;
+}
+.main-contents8{
+    padding: 150px 20px;
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.m8_cont{
+    display: flex;
+    justify-content: center;
+}
+.m8_box{
+    width: 350px;
+    padding: 34px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.m8_box_text{
+    display: flex;
+    color: #4135bb;
+    align-items: end;
+    justify-content: center;
+}
+.m8_box h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.m8_box p{
+    margin-bottom: 10px;
+}
+.m8_box span{
+    color: #8a92a5;
+    font-size: 15px;
+}
+.m8_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.m8_text > img{
+    width: 135px;
+}
+.m8_text span{
+    font-size: 2.5rem;
+}
+.m8_text .delete{
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+.m8_text .delete::before{
+    content: "";
+    background-image: url("../../assets/delete.png");
+    background-size: 100% 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.m8_text .m8_icon > img{
+    width: 20px;
+    margin: 0 10px;
+}
+.m8_text .blue{
+    color: #4135bb;
+    font-weight: bold;
+}
+@media (max-width : 768px) {
+    .m8_cont{
+        flex-direction: column;
+        align-items: center;
+    }
+    .m8_box{
+        width: 150px;
+        padding: 10px;
+    }
+    .m8_box > img{
+        margin-left: -10px;
+    }
+    .m8_text > img{
+        width: 80px;
+    }
+    .m8_text span{
+        font-size: .9rem;
+    }
+    .m8_text{
+        margin-left: -15px;
+    }
+}

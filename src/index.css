@@ -1,13 +1,183 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+/* HEADER */
+.original_header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  overflow: visible;
+  z-index: 750;
+  transition: all 0.4s;
+}
+.change_header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  overflow: visible;
+  z-index: 750;
+  transition: all 0.4s;
+  background: #fff;
+  box-shadow: 0 4px 10px rgb(25 25 25 / 10%);
+}
+.header_container{
+  max-width: 1400px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 5px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo{
+  width: 100px;
+  height: 25px;
+  padding: 0 20px;
+  background-image: url("./assets/bootpay_white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 10px;
+}
+.change_logo{
+  width: 100px;
+  height: 25px;
+  padding: 0 20px;
+  background-image: url("./assets/bootpay_dark_dot.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 10px;
+}
+.header_container ul{
+  display: flex;
+}
+
+.header_container ul li a{
+  display: block;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #fff;
+}
+.header_container ul li a:hover{
+  font-weight: bold;
+}
+.change_header ul li a{
+  color: #000;
+}
+
+/* 애니메이션 */
+@keyframes fadeInLeft {
+  from{
+    margin-left: -100px;
+    opacity: 0;
+  }
+  to{
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInBottom {
+  from{
+    margin-bottom: -300px;
+    opacity: 0;
+  }
+  to{
+    margin-bottom: 0;
+    opacity: 1;
+  }
+}@keyframes fadeInBottom2 {
+  from{
+    top: 48%;
+    opacity: 0;
+  }
+  to{
+    top: 35%;
+    opacity: 1;
+  }
+}@keyframes fadeInBottom3 {
+  from{
+    top: 80%;
+    opacity: 0;
+  }
+  to{
+    top: 60%;
+    opacity: 1;
+  }
+}
+@keyframes fadeInright {
+  from{
+    margin-right: -200px;
+    opacity: 0;
+  }
+  to{
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
+/* FOOTER */
+footer{
+  width: 100%;
+  height: 240px;
+  background: #f7f9fc;
+  display: flex;
+  justify-content: center;
+}
+.ft_logo{
+  width: 100px;
+  height: 45px;
+}
+.ft_contents{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ft_contents .contact, .links{
+  margin-top: 15px;
+}
+.ft_contents .title{
+  font-size: 13px;
+  color: #8a92a5;
+  font-weight: 700;
+}
+.ft_contents .text{
+  font-size: 14px;
+  color: #8a92a5;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+.ft_box{
+  display: flex;
+}
+@media (max-width: 768px) {
+
+  .ft_contents{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ft_contents .text{
+    font-size: 10px;
+    margin-right: 0;
+  }
+  .ft_logo{
+    width: 80px;
+  }
+  .ft_box{
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+  }
+  /*.original_header, .change_header{*/
+  /*  display: none;*/
+  /*}*/
 }

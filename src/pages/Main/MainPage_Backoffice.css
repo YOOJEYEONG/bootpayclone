@@ -1,0 +1,58 @@
+/* Main_Backoffice */
+.main9_wrap{
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #4135bb;
+}
+.main-contents9{
+    /*padding: 150px 20px;*/
+    box-sizing: border-box;
+    max-width: 1000px;
+    height: 180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.m9_text{
+    display: flex;
+}
+.m9_text span{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.m9_text img{
+    width: 110px;
+}
+.main-contents9 button{
+    padding: 20px 30px;
+    border: none;
+    border-radius: 3px;
+    color: #4529e5;
+    font-size: .9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+@media (max-width : 768px) {
+    .main-contents9{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        margin-left: -20px;
+    }
+    .m9_text span{
+        font-size: .9rem;
+    }
+    .m9_text img{
+        width: 80px;
+    }
+    .main-contents9 button{
+        padding: 10px 15px;
+        font-size: .7rem;
+    }
+}

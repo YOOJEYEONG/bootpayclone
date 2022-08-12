@@ -1,0 +1,118 @@
+/* MainPage_Security */
+.main5_wrap{
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #f7f9fc;
+}
+.main-contents5{
+    padding: 150px 100px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.m5_lf_icon, .m5_rt_icon{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+.m5_lf_text, .m5_rt_text .bold{
+    font-size: 28px;
+    color: #555555;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.m5_lf_text p{
+    font-size: 16px;
+    color: #8a92a5;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.m5_lf_text button{
+    color: #fff;
+    background: #4529e5;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+.m5_lf_main img{
+    width: 370px;
+}
+.m5_rt_main{
+    padding: 50px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.m5_rt_main > img{
+    width: 200px;
+    text-align: right;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.m5_rt_main li{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4529e5;
+    margin-bottom: 44px;
+}
+.m5_rt_main li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .main-contents5{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .m5_lf_icon, .m5_rt_icon{
+        width: 60px;
+        height: 60px;
+    }
+    .m5_lf_text, .m5_rt_text .bold{
+        font-size: 20px;
+    }
+    .m5_lf_text p{
+        font-size: 8px;
+    }
+    .m5_lf_text button{
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+    .m5_lf_main img{
+        width: 250px;
+    }
+    .m5_rt_main{
+        width: 250px;
+    }
+    .m5_right{
+        margin-top: 50px;
+    }
+    .m5_rt_main{
+        padding: 20px;
+    }
+    .m5_rt_main > img{
+        width: 150px;
+        margin-left:60px;
+    }
+
+    .m5_rt_main li{
+        font-size: .8rem;
+        margin-bottom: 20px;
+    }
+    .m5_rt_main li img{
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+}
